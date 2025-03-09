@@ -1,13 +1,7 @@
-<center>
-<img src="D:\python_2025\stdy_python\pictures\majorana_repo.png" width=100%>
-</center>
+# Python ohjelmoinnin kertaus 2025
 
-VB
-
-<hr>
-
-### <span style="color:#01759a">practice1.py - Perusteet: muuttujat, funktiot ja merkkijonot</span>
-<hr>
+---
+### practice1.py - Perusteet: muuttujat, funktiot ja merkkijonot
 
 
 #### Ohjelman logiikka (Wireframe):
@@ -87,6 +81,7 @@ Käytetyt ohjelmointitekniikat:
 #### Käyttäjän Syöte
 
 #### Käyttäjän syötteen lukeminen
+
     ```python
     user_input = input("He, enter a number of days and I will convert it to hours?\n")
     print(user_input)
@@ -97,6 +92,7 @@ Käytetyt ohjelmointitekniikat:
 #### Funktiot ja Palautusarvot
 
 #### Muuttujien määrittely
+
     ```python
     cal_to_units = 24             
     name_of_unit = "seconds"
@@ -104,6 +100,7 @@ Käytetyt ohjelmointitekniikat:
     - Määritellään muuttujat, joita käytetään laskennassa.
 
 #### Funktion määrittely
+
     ```python
     def days_to_units(num_of_days):       
         return f"{num_of_days} days are {num_of_days * cal_to_units} {name_of_unit}"
@@ -114,6 +111,7 @@ Käytetyt ohjelmointitekniikat:
 #### Funktiokutsu
 
 #### Palautetun arvon tallennus ja tulostus
+
     ```python
     my_var = days_to_units(20)
     print(my_var)
@@ -121,10 +119,7 @@ Käytetyt ohjelmointitekniikat:
     - Tallennetaan funktion palauttama arvo muuttujaan.
     - Tulostetaan muuttujan arvo konsoliin.
 
-<hr>
-
-### <span style="color:#01759a">practice3.py - Funktioiden paluuarvot</span>
-<hr>
+### practice3.py - Funktioiden paluuarvot
 
 #### Kuvaus:
 
@@ -137,6 +132,7 @@ Käytetyt ohjelmointitekniikat:
 #### Funktioiden Palautusarvot ja Käyttäjän Syöte
 
 #### Muuttujien määrittely
+
     ```python
     cal_to_units = 24             
     name_of_unit = "hours"
@@ -145,6 +141,7 @@ Käytetyt ohjelmointitekniikat:
     - `name_of_unit` määrittää yksikön tulosteelle.
 
 #### Funktion määrittely
+
     ```python
     def days_to_units(num_of_days):       
         return f"\n{num_of_days} days are {num_of_days * cal_to_units} {name_of_unit}"
@@ -155,12 +152,14 @@ Käytetyt ohjelmointitekniikat:
 #### Käyttäjän syötteen käsittely
 
 #### Syötteen lukeminen ja muuntaminen
+
     ```python
     user_input = input("Hey, enter a number of days and I will convert it to hours? ")
     ```
     - `input()` lukee käyttäjän antaman arvon merkkijonona.
 
 #### Arvon muuntaminen kokonaisluvuksi ja funktion kutsuminen
+
     ```python
     calculate_value = days_to_units(int(user_input))
     print(calculate_value)
@@ -169,6 +168,7 @@ Käytetyt ohjelmointitekniikat:
     - `days_to_units()` laskee arvon ja tulostaa sen.
 
 #### Vaihtoehtoinen tapa tallentaa ja käyttää syötettä
+
     ```python
     user_input_number = int(user_input)
     calculate_value2 = days_to_units(user_input_number)
@@ -184,10 +184,7 @@ Käytetyt ohjelmointitekniikat:
     - days_to_units-funktio muuntaa päivät tunneiksi.
     - Tulos tallennetaan muuttujaan ja tulostetaan.
 
-<hr>
-
-### <span style="color:#01759a">practice4.py - Käyttäjän syötteen validointi</span>
-<hr>
+### practice4.py - Käyttäjän syötteen validointi
 
 #### Kuvaus:
 
@@ -204,10 +201,7 @@ Käytetyt ohjelmointitekniikat:
     - Jos syöte on kelvollinen, päivämäärä muunnetaan tunneiksi ja tulostetaan.
     - Jos syöte ei ole kelvollinen, tulostetaan virheilmoitus.
 
-<hr>
-
-### <span style="color:#01759a">practice5.py - Koodin siistiminen ja kapselointi</span>
-<hr>
+### practice5.py - Koodin siistiminen ja kapselointi
 
 #### Kuvaus:
 
@@ -223,10 +217,7 @@ Käytetyt ohjelmointitekniikat:
     - validate_and_execute-funktio tarkistaa, onko syöte kelvollinen.
     - Jos syöte on kelvollinen, päivämäärä muunnetaan tunneiksi ja tulostetaan.
 
-<hr>
-
-### <span style="color:#01759a">practice6.py - Sisäkkäiset silmukat</span>
-<hr>
+### practice6.py - Sisäkkäiset silmukat
 
 #### Kuvaus:
 
@@ -242,10 +233,7 @@ Käytetyt ohjelmointitekniikat:
     - validate_and_execute-funktio tarkistaa, onko syöte positiivinen kokonaisluku.
     - Jos syöte on kelvollinen, päivämäärä muunnetaan tunneiksi ja tulostetaan.
 
-<hr>
-
-### <span style="color:#01759a">practice7.py - Virheenkäsittely (try-except)</span>
-<hr>
+### practice7.py - Virheenkäsittely (try-except)
 
 #### Kuvaus:
 
@@ -262,10 +250,7 @@ Käytetyt ohjelmointitekniikat:
     - Jos syöte on kelvollinen, päivämäärä muunnetaan tunneiksi ja tulostetaan.
     - Jos syöte ei ole kelvollinen, tulostetaan virheilmoitus.
 
-<hr>
-
-### <span style="color:#01759a">practice8.py - while-silmukka</span>
-<hr>
+### practice8.py - while-silmukka
 
 #### Kuvaus:
 
@@ -282,10 +267,7 @@ Käytetyt ohjelmointitekniikat:
     - Jos syöte ei ole "exit", päivämäärä muunnetaan tunneiksi ja tulostetaan.
     - Silmukka jatkuu, kunnes käyttäjä syöttää "exit".
 
-<hr>
-
-### <span style="color:#01759a">practice9.py - Listan käsittely ja pilkkominen</span>
-<hr>
+### practice9.py - Listan käsittely ja pilkkominen
 
 #### Kuvaus:
 
@@ -302,10 +284,7 @@ Käytetyt ohjelmointitekniikat:
     - Syöte jaetaan listaksi, ja jokainen alkio käsitellään erikseen.
     - Jokainen päivämäärä muunnetaan tunneiksi ja tulostetaan.
 
-<hr>
-
-### <span style="color:#01759a">practice10.py - Listan käsittely</span>
-<hr>
+### practice10.py - Listan käsittely
 
 #### Kuvaus:
 
@@ -323,10 +302,7 @@ Käytetyt ohjelmointitekniikat:
     - Käydään läpi listan alkiot silmukassa.
     - Poistetaan alkio listasta ja tulostetaan päivitetty lista.
 
-<hr>
-
-### <span style="color:#01759a">practice11.py - Päivien muuntaminen tunneiksi</span>
-<hr>
+### practice11.py - Päivien muuntaminen tunneiksi
 
 #### Kuvaus:
 
@@ -344,10 +320,7 @@ Käytetyt ohjelmointitekniikat:
     - Jokainen päivämäärä muunnetaan tunneiksi ja tulostetaan.
     - Ohjelma jatkaa, kunnes käyttäjä syöttää "exit".
 
-<hr>
-
-### <span style="color:#01759a">practice12.py - Joukon käsittely</span>
-<hr>
+### practice12.py - Joukon käsittely
 
 #### Kuvaus:
 
@@ -364,10 +337,7 @@ Käytetyt ohjelmointitekniikat:
     - Lisätään uusi alkio joukkoon ja poistetaan yksi alkio.
     - Tulostetaan päivitetty joukko.
 
-<hr>
-
-### <span style="color:#01759a">practice13.py - Dictionary käyttö päivien muuntamiseen</span>
-<hr>
+### practice13.py - Dictionary käyttö päivien muuntamiseen
 
 #### Kuvaus:
 
@@ -385,10 +355,7 @@ Käytetyt ohjelmointitekniikat:
 - Syöte jaetaan sanakirjaksi, jossa avaimet ovat "days" ja "unit".
 - Päivämäärä muunnetaan tunneiksi tai minuuteiksi ja tulostetaan.
 
-<hr>
-
-### <span style="color:#01759a">practice14.py - Moduulien käyttö</span>
-<hr>
+### practice14.py - Moduulien käyttö
 
 #### Kuvaus:
 
@@ -405,10 +372,8 @@ Käytetyt ohjelmointitekniikat:
 - Käyttäjä syöttää päivämäärän ja muunnosyksikön (esim. "5-hours").
 - Syöte jaetaan dictionary |sanakirjaksi.
 - validate_and_execute-funktio suoritetaan, ja tulos tulostetaan.
-<hr>
 
-### <span style="color:#01759a">helper14.py - Apumoduuli päivien muuntamiseen (practice14.py)</span>
-<hr>
+helper14.py - Apumoduuli päivien muuntamiseen (practice14.py)
 
 #### Kuvaus:
 
@@ -423,13 +388,11 @@ Käytetyt ohjelmointitekniikat:
 
 - days_to_units-funktio muuntaa päivät tunneiksi tai minuuteiksi.
 - validate_and_execute-funktio varmistaa, että syöte on kelvollinen, ja suorittaa muunnoksen.
-<hr>
 
-### <span style="color:#01759a">practice15.py - OOP</span>
-<hr>
+### practice15.py - OOP
 
 #### Kuvaus: Jatkan tästä kunhan taas kerkeää..
 
 #### Ohjelman logiikka (Wireframe):
 
-<hr>
+
